@@ -12,9 +12,15 @@ p
 {
     font-family: 'Nanum Brush Script', cursive;
 }
+body {
+    margin: 0;
+    background: rgb(163, 241, 241);
+}
+
 
 @media only screen and (max-width: 600px) {
     #main {
-        background: rgb(178, 236, 163);
+        background: rgb(66, 233, 16);
     }
 }
+
