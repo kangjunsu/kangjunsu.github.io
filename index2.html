@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css2.css" />
+        <title>Phonebook</title>
+    </head>
+   
+   <body>
+    <h1>Phone Book</h1>
+
+    <div id="main">
+        Last Name<span><input id="ln" type="text"/><br/></span>
+        First Name<span><input id="fn" type="text"/><br/></span>
+        Phone Number<span><input id="pn" type="text"/><br/></span>
+    </div>
+    <button id="savebtn" onclick="add_row()">Save</button>
+
+
+    <hr>
+    <table>
+      <thead>
+        <th>▼ Last Name</th>
+        <th>▼ First Name</th>
+        <th colspan="2">▼ Phone Number</th>
+        
+      </thead>
+      <tbody id="my-tbody"></tbody>
+    </table>
+    
+    <script src="js.js">
+    
+    </script>
+    </html>
