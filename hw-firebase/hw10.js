@@ -8,7 +8,7 @@ function setupFireBase(){
         authDomain: "jongwonjjang-1206f.firebaseapp.com",
         databaseURL: "https://jongwonjjang-1206f.firebaseio.com",
         projectId: "jongwonjjang-1206f",
-        storageBucket: "",
+        storageBucket: "jongwonjjang-1206f.appspot.com",
         messagingSenderId: "451307023075"
       };
       firebase.initializeApp(config);
