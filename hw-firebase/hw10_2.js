@@ -12,7 +12,6 @@ function setupFireBase(){
         messagingSenderId: "1091324766184"
       };
       firebase.initializeApp(config);
-
     var ref = firebase.database().ref("Customers");
     
     //when child is added
@@ -100,4 +99,10 @@ window.onload = function(){
                 
                 
             }
-        );})}
+        );
+
+
+    });
+
+
+}
