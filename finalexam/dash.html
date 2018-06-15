@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        #main{
+            width:600px;
+            min-height:500px;
+            margin:auto;
+            border:2px solid #aaa;
+            padding:5px;
+        }
+        input{
+            padding:5px;
+            font-size:1.2em;
+        }
+    </style>
+    <h1>DashBoard</h1>
+</head>
+<body>
+    <div id="main">
+        
+
+       Ball ID<br/> <input type="text"  id="ballid"><br/>
+       Ball Color<br/> <input type="text"  id="ballco"><br/>
+       Ball Radius<br/>  <input type="text"  id="ballra"><br/>
+       <button id="button_save">Save</button>
+
+    <table id="list" width="100%" border="1"> 
+        <br><br/>
+        <tr><th>Ball ID</th> <th>Ball Color</th> <th>Ball Radius</th> <th>Status</th></tr>
+
+
+       
+
+
+    </table>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
