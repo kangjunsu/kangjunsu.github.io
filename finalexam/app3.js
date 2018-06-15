@@ -2,7 +2,7 @@
 
 
 function setupFireBase(){
-  // Initialize Firebase
+    // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBlHnjCKVy0EnseyvMiSNr_gK-bstGbZSk",
     authDomain: "jongwonjjang-1206f.firebaseapp.com",
@@ -12,6 +12,8 @@ function setupFireBase(){
     messagingSenderId: "451307023075"
   };
   firebase.initializeApp(config);
+
+
     var ref = firebase.database().ref("balls");
     
     //when child is added
@@ -50,6 +52,39 @@ function setupFireBase(){
         
         tr.id = snap.key;
         list.appendChild(tr);
+    });
+
+
+}
+
+
+
+
+window.onload = function(){
+    
+    //alert("ok");
+    setupFireBase();
+    
+    var btnSave = document.querySelector("#button_save");
+    //btnSave.onclick = function() {} #old style    
+    btnSave.addEventListener("click",function(){
+        var ballid = document.querySelector("#ballid").value;
+        var ballco = document.querySelector("#ballco").value;
+        var ballra = document.querySelector("#ballra").value;
+       
+
+       
+
+        firebase.database().ref().child("balls").push().set(
+            {
+               ballid:ballid,
+               ballco:ballco,
+               ballra:ballra
+                
+            }
+        );
+
+
     });
 
 
